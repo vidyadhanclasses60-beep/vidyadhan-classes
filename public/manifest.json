@@ -1,0 +1,13 @@
+{
+  "name": "Vidyadhan Classes — For Quality Education",
+  "short_name": "Vidyadhan Classes",
+  "description": "Coaching classes for Std. 7th to 10th and 11th & 12th (Science & Commerce) in Vitawa, Kalwa, Thane. For Quality Education since 2008.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0A2E8A",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -89,6 +89,38 @@ These items were **not** present in the source material and use clearly-marked p
 4. **Gallery images** — replace the placeholder cards in `components/gallery/GalleryGrid.tsx` with real photos.
 5. **Testimonials** — the quotes in `lib/data.ts` are representative samples; replace with genuine signed testimonials.
 
+## ⬆️ Getting this onto GitHub (with all folders)
+
+> GitHub's **web** "Upload files" page often drops sub-folders — that's why a
+> previous attempt left the repo with only root files and Vercel failed with
+> *"Couldn't find any pages or app directory."* Use one of the methods below
+> instead; each one preserves `app/`, `components/`, etc.
+
+**Method A — Git command line (most reliable)**
+```bash
+# inside the unzipped vidyadhan-classes folder
+git init
+git add .
+git commit -m "Vidyadhan Classes website"
+git branch -M main
+git remote add origin https://github.com/vidyadhanclasses60-beep/vidyadhan-classes.git
+git push -u origin main --force
+```
+`--force` cleanly overwrites the half-uploaded repo. Done.
+
+**Method B — GitHub Desktop (no terminal)**
+1. Install **GitHub Desktop**, sign in.
+2. File → **Add local repository** → select the unzipped `vidyadhan-classes` folder.
+3. It offers to create a repository — accept, then **Publish repository**.
+All folders upload automatically.
+
+**Method C — Web upload, done correctly**
+On the repo's **Add file → Upload files** page, **drag the folders themselves**
+(`app`, `components`, `constants`, `lib`, `public`, `types`) into the box — not
+the individual files. Chrome/Edge preserve the folder structure. Commit.
+
+After any method, Vercel will redeploy automatically and the build will pass.
+
 ## ▲ Deploy to Vercel
 
 1. Push this folder to a GitHub repository.

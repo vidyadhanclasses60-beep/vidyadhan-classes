@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { GraduationCap, BookOpen, Clock } from "lucide-react";
 import { faculty } from "@/lib/data";
 import { initials, avatarGradient, cn } from "@/lib/utils";
@@ -24,15 +25,25 @@ export default function FacultyPage() {
           {faculty.map((f, i) => (
             <Reveal key={f.name} delay={(i % 4) * 0.08}>
               <div className="h-full rounded-3xl border border-line bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:shadow-soft">
-                <div
-                  className={cn(
-                    "mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br text-xl font-bold text-white shadow-soft",
-                    avatarGradient(f.name),
-                  )}
-                  aria-hidden
-                >
-                  {initials(f.name)}
-                </div>
+                {f.image ? (
+                  <Image
+                    src={f.image}
+                    alt={`${f.name} — ${f.role}`}
+                    width={96}
+                    height={96}
+                    className="mx-auto h-20 w-20 rounded-full border-2 border-gold-400 object-cover shadow-soft"
+                  />
+                ) : (
+                  <div
+                    className={cn(
+                      "mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br text-xl font-bold text-white shadow-soft",
+                      avatarGradient(f.name),
+                    )}
+                    aria-hidden
+                  >
+                    {initials(f.name)}
+                  </div>
+                )}
                 <h3 className="mt-4 font-display text-lg font-bold text-brand-900">{f.name}</h3>
                 <p className="text-sm font-semibold text-crimson-600">{f.role}</p>
                 <div className="mt-4 space-y-2 text-left text-sm text-ink/70">

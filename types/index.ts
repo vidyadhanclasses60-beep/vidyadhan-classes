@@ -40,6 +40,7 @@ export interface Faculty {
   qualification: string;
   subject: string;
   experience: string;
+  image?: string;
 }
 
 export interface Testimonial {

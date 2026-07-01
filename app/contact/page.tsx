@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MapPin, Phone, Mail, MessageCircle, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, Clock, Instagram, Star } from "lucide-react";
 import { site } from "@/constants/site";
 import { PageHero } from "@/components/shared/PageHero";
 import { Reveal } from "@/components/shared/Reveal";
@@ -17,6 +17,9 @@ const details = [
   { icon: Phone, label: "Phone", value: site.phone, href: site.phoneHref },
   { icon: MessageCircle, label: "WhatsApp", value: site.phone, href: site.whatsappHref },
   { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
+  { icon: Mail, label: "Director's Email", value: site.directorEmail, href: `mailto:${site.directorEmail}` },
+  { icon: Instagram, label: "Instagram", value: "@vidyadhanclasses_thane", href: site.social.instagram },
+  { icon: Star, label: "Google Reviews", value: "Rate us on Google", href: site.social.googleReview },
   { icon: Clock, label: "Office Hours", value: "Mon – Sat, 9:00 AM – 8:00 PM" },
 ];
 
@@ -43,7 +46,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-xs font-bold uppercase tracking-wide text-ink/50">{d.label}</p>
                     {d.href ? (
-                      <a href={d.href} className="font-semibold text-brand-900 hover:text-crimson-600">{d.value}</a>
+                      <a href={d.href} target={d.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="font-semibold text-brand-900 hover:text-crimson-600">{d.value}</a>
                     ) : (
                       <p className="font-semibold text-brand-900">{d.value}</p>
                     )}

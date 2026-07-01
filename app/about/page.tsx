@@ -68,11 +68,11 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="rounded-4xl bg-brand-gradient p-8 text-center text-white shadow-soft">
               <Image
-                src="/logo.png"
-                alt="Vidyadhan Classes"
-                width={160}
-                height={160}
-                className="mx-auto h-40 w-40 rounded-full bg-white object-contain p-2"
+                src="/images/director.jpg"
+                alt="Mahendra Chaudhari Sir — Director of Vidyadhan Classes"
+                width={200}
+                height={200}
+                className="mx-auto h-44 w-44 rounded-full border-4 border-gold-400 object-cover shadow-soft"
               />
               <h3 className="mt-5 font-display text-2xl font-bold">{site.director}</h3>
               <p className="text-gold-300">{site.directorQualification} — Director & Founder</p>

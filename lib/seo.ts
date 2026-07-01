@@ -82,5 +82,6 @@ export function organizationJsonLd() {
       addressCountry: "IN",
     },
     founder: { "@type": "Person", name: site.director },
+    sameAs: [site.social.instagram],
   };
 }

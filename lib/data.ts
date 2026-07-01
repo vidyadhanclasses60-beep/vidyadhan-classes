@@ -179,7 +179,7 @@ export const facilities: Facility[] = [
 /*  FACULTY / SECTIONS — Director from PDF; section heads on page 12   */
 /* ------------------------------------------------------------------ */
 export const faculty: Faculty[] = [
-  { name: "Mahendra Chaudhari Sir", role: "Director & Founder", qualification: "B.Sc. B.Ed.", subject: "Mentor — School & Science", experience: "Since 2008" },
+  { name: "Mahendra Chaudhari Sir", role: "Director & Founder", qualification: "B.Sc. B.Ed.", subject: "Mentor — School & Science", experience: "Since 2008", image: "/images/director.jpg" },
   { name: "School Section", role: "Section Head", qualification: "Experienced State Board faculty", subject: "Std. 7th to 10th — All Subjects", experience: "Dedicated school team" },
   { name: "Science Section", role: "Section Head", qualification: "PCMB & MHT-CET specialists", subject: "Std. 11th & 12th Science", experience: "CET-focused mentors" },
   { name: "Commerce Section", role: "Section Head", qualification: "Commerce subject experts", subject: "Std. 11th & 12th Commerce", experience: "Board-focused mentors" },

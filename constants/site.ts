@@ -12,8 +12,9 @@ export const site = {
   phoneHref: "tel:+919322094000",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || "919322094000",
   whatsappHref: "https://wa.me/919322094000",
-  // Email is NOT present in the PDF — replace before publishing.
-  email: process.env.NEXT_PUBLIC_EMAIL || "info@vidyadhanclasses.com",
+  // Email — institute Gmail (primary public contact)
+  email: process.env.NEXT_PUBLIC_EMAIL || "vidyadhancoachingclasses@gmail.com",
+  directorEmail: "mkchaudhari18@gmail.com",
   address: {
     line1: "A/3, Ramdas Apartment CHS Ltd",
     line2: "Vitawa, Post-Kalwa",
@@ -26,11 +27,10 @@ export const site = {
     process.env.NEXT_PUBLIC_MAPS_QUERY ||
     "Ramdas Apartment, Vitawa, Kalwa, Thane 400605",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.vidyadhanclasses.com",
-  // Social links are NOT in the PDF — placeholders to be replaced.
+  // Official links
   social: {
-    facebook: "#",
-    instagram: "#",
-    youtube: "#",
+    instagram: "https://www.instagram.com/vidyadhanclasses_thane",
+    googleReview: "https://connectitgmb.com/r/aYfTun",
   },
 } as const;
 

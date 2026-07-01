@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Star } from "lucide-react";
 import { starPerformer } from "@/lib/data";
 import { PageHero } from "@/components/shared/PageHero";
@@ -39,7 +40,28 @@ export default function ResultsPage() {
         </div>
       </section>
 
-      <section className="pb-20">
+      <section className="pb-4">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-3xl overflow-hidden rounded-4xl border border-line bg-white p-3 shadow-card">
+              <Image
+                src="/images/results/toppers-2026.jpg"
+                alt="Vidyadhan Classes SSC and HSC 2026 toppers with names and percentages"
+                width={1035}
+                height={1600}
+                sizes="(max-width: 768px) 100vw, 700px"
+                className="h-auto w-full rounded-3xl"
+                priority
+              />
+            </div>
+            <p className="mx-auto mt-4 max-w-3xl text-center text-sm text-ink/60">
+              Our complete SSC &amp; HSC 2026 toppers. Full list with schools below.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="pb-20 pt-12">
         <ResultsTabs />
       </section>
     </>

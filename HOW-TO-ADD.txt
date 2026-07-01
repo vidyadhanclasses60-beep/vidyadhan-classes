@@ -1,27 +1,21 @@
-VIDYADHAN CLASSES — update 2 (event photos + toppers poster on Results page)
-===========================================================================
-This package is COMPLETE and self-contained. Even if you already pushed the
-previous update, copying all of this in again is safe (it just overwrites).
+VIDYADHAN CLASSES — update 4 (ALL 25 SSC toppers now have real photos)
+=====================================================================
+This is COMPLETE and self-contained (includes all 25 SSC face photos).
+Copy into your cloned GitHub folder, keep folder names, then Commit -> Push.
 
-Copy these into your cloned GitHub folder, keeping the SAME folder names,
-then in GitHub Desktop: Commit -> Push. Vercel redeploys automatically.
+  1) components/shared/TopperCard.tsx   -> overwrite existing
+  2) public/images/toppers/             -> copy ALL 25 .jpg here
+     (if an old "harprit-singh.jpg" is there, you can delete it — the file is
+      now named "harpritsingh-rathod.jpg" to match the correct name.)
 
-  1) components/gallery/GalleryGrid.tsx   -> overwrite existing
-  2) app/results/page.tsx                 -> overwrite existing
-  3) public/images/gallery/               -> copy ALL .jpg here
-  4) public/images/results/               -> copy toppers-2026.jpg here
-                                             (create the "results" folder)
+RESULT: Every one of your 25 SSC topper cards (home + Results page) now shows
+the student's real face.
 
-WHAT CHANGES ON THE SITE
-  Results page  -> your full combined toppers poster shows at the top.
-  Gallery page  -> now shows 9 real photos:
-      SSC toppers poster, HSC toppers poster,
-      Sabhasad Sanman certificate, Shikshakratna trophy,
-      Aadarsh Shikshak ceremony, Director felicitation,
-      10th Farewell ceremony, Student gathering, Annual function.
-  3 gallery cards stay as branded placeholders (Teacher's Day Sohla,
-      Classroom & Doubt Sessions, 100% Result Celebration) — no photo for
-      those yet. They look intentional, not broken.
+FIXED THIS ROUND: the site's data spells him "Harpritsingh Rathod" (his poster
+matches), so his photo now attaches correctly.
 
-EXTRAS (in gallery folder, not shown anywhere yet):
-  admission-open-2026.jpg, letterhead-banner.jpg  -> tell me if you want them used.
+STILL SHOWING INITIALS:
+  - HSC: all 17 toppers  -> send their individual posters and I'll add them.
+  - Star Performer "Manashree Pawar" (96.20%) on the Results page has no photo
+    slot yet (it's a designed highlight card). Send her poster if you want her
+    face featured there too.

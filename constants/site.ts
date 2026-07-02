@@ -25,12 +25,16 @@ export const site = {
   },
   mapsQuery:
     process.env.NEXT_PUBLIC_MAPS_QUERY ||
-    "Ramdas Apartment, Vitawa, Kalwa, Thane 400605",
+    "VIDYADHAN CLASSES Tuition, Vitawa, Kalwa, Thane 400605",
+  mapsUrl:
+    "https://www.google.com/maps/place/VIDYADHAN+CLASSES(Tution)/@19.1857537,72.9884228,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7b9c1304ece8f:0xd2a390c2d0e53c13!8m2!3d19.1857487!4d72.9909977",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.vidyadhanclasses.com",
   // Official links
   social: {
     instagram: "https://www.instagram.com/vidyadhanclasses_thane",
     googleReview: "https://connectitgmb.com/r/aYfTun",
+    youtube: "https://www.youtube.com/@vidyadhanclassesthane",
+    facebook: "https://www.facebook.com/share/1DTevSScJT/?mibextid=wwXIfr",
   },
 } as const;
 

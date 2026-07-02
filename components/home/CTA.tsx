@@ -13,7 +13,7 @@ export function CTA() {
             <div className="pointer-events-none absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-crimson-600/20 blur-3xl" aria-hidden />
             <h2 className="font-display text-3xl font-extrabold sm:text-4xl">Admissions Are Open</h2>
             <p className="mx-auto mt-3 max-w-xl text-brand-100">
-              Join Vidyadhan Classes for Std. 7th–10th, 11th & 12th (Science & Commerce). Talk to
+              Join Vidyadhan Classes for Std. 7th to 10th, 11th & 12th (Science & Commerce). Talk to
               Mahendra Chaudhari Sir today and secure your seat.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">

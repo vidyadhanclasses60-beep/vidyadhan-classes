@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Courses & Fees",
   description:
-    "Courses at Vidyadhan Classes: Std. 7th–10th (English & Semi-English), 11th & 12th Science (MHT-CET) and Commerce, with full 2026-27 fee structure.",
+    "Courses at Vidyadhan Classes: Std. 7th to 10th (English & Semi-English), 11th & 12th Science (MHT-CET) and Commerce, with full 2026-27 fee structure.",
 };
 
 export default function CoursesPage() {

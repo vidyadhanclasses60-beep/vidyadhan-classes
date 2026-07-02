@@ -36,7 +36,7 @@ export function Header() {
       <div className="container flex h-20 items-center justify-between py-3">
         <Logo />
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-1 xl:flex" aria-label="Primary">
           {nav.map((item) => {
             const active = pathname === item.href;
             return (
@@ -54,7 +54,7 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-2 xl:flex">
           <Button href={site.phoneHref} variant="outline" size="sm">
             <Phone className="h-4 w-4" /> {site.phone}
           </Button>
@@ -64,7 +64,7 @@ export function Header() {
         </div>
 
         <button
-          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-line text-brand-700 lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-line text-brand-700 xl:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
@@ -80,7 +80,7 @@ export function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-line bg-white lg:hidden"
+            className="overflow-hidden border-t border-line bg-white xl:hidden"
           >
             <nav className="container flex flex-col gap-1 py-4" aria-label="Mobile">
               {nav.map((item) => {

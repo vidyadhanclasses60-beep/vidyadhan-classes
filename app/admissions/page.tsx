@@ -10,12 +10,12 @@ import { AdmissionForm } from "@/components/forms/AdmissionForm";
 export const metadata: Metadata = {
   title: "Admissions",
   description:
-    "Admissions open at Vidyadhan Classes, Kalwa, Thane for 2026-27. Std. 7th–10th and 11th & 12th (Science & Commerce). Enquire on WhatsApp 9322094000.",
+    "Admissions open at Vidyadhan Classes, Kalwa, Thane for 2026-27. Std. 7th to 10th and 11th & 12th (Science & Commerce). Enquire on WhatsApp 9322094000.",
 };
 
 const steps = [
   { icon: MessageCircle, title: "Enquire", text: "Send the enquiry form or call us on WhatsApp." },
-  { icon: CalendarClock, title: "Visit / Demo", text: "Attend a demo lecture and meet the faculty." },
+  { icon: CalendarClock, title: "Visit Us", text: "Meet the faculty and see the classrooms." },
   { icon: FileText, title: "Register", text: "Complete admission and pay one-time fees." },
   { icon: CheckCircle2, title: "Start Learning", text: "Receive free printed notes and join your batch." },
 ];
@@ -26,7 +26,7 @@ export default function AdmissionsPage() {
       <PageHero
         breadcrumb="Admissions"
         title="Admissions Open 2026-27"
-        subtitle="Secure your seat for Std. 7th–10th or 11th & 12th (Science & Commerce). Demo lectures from 1st June 2026."
+        subtitle="Secure your seat for Std. 7th to 10th or 11th & 12th (Science & Commerce)."
       />
 
       {/* Steps */}

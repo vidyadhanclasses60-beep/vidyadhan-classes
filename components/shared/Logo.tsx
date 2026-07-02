@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function Logo({ light = false, className }: { light?: boolean; className?: string }) {
   return (
-    <Link href="/" className={cn("flex items-center gap-3", className)} aria-label={`${site.name} home`}>
+    <Link href="/" className={cn("flex shrink-0 items-center gap-3", className)} aria-label={`${site.name} home`}>
       <Image
         src="/logo.png"
         alt={`${site.name} logo`}
@@ -15,7 +15,7 @@ export function Logo({ light = false, className }: { light?: boolean; className?
         priority
       />
       <span className="leading-tight">
-        <span className={cn("block font-display text-lg font-extrabold tracking-tight", light ? "text-white" : "text-brand-900")}>
+        <span className={cn("block whitespace-nowrap font-display text-lg font-extrabold tracking-tight", light ? "text-white" : "text-brand-900")}>
           {site.name}
         </span>
         <span className={cn("block text-[11px] font-semibold tracking-wide", light ? "text-gold-300" : "text-crimson-600")}>

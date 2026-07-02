@@ -5,7 +5,6 @@ const messages = [
   "🏆 SSC 2026: Divya Sonawane tops with 90.20% — 100% Result at Vidyadhan Classes",
   "📚 Free printed notes for one-time fees paid",
   "📞 Call / WhatsApp Mahendra Chaudhari Sir: 9322094000",
-  "🔬 11th Demo lectures start Monday, 1st June 2026",
 ];
 
 export function AnnouncementBar() {

@@ -74,7 +74,7 @@ export const allToppers: Topper[] = [...sscToppers, ...hscToppers];
 export const courses: Course[] = [
   {
     slug: "school-7-10",
-    title: "School Section (7th – 10th)",
+    title: "School Section (7th to 10th)",
     level: "Std. 7th to 10th",
     medium: "English & Semi-English Medium",
     subjects: ["All Subjects", "State Board Syllabus", "Maths", "Science", "English", "Social Science"],
@@ -84,12 +84,12 @@ export const courses: Course[] = [
   },
   {
     slug: "science-11-12",
-    title: "Science (11th & 12th)",
-    level: "Std. 11th & 12th — Science",
+    title: "Science (11th & 12th) — MHT-CET",
+    level: "Std. 11th & 12th — Science (MHT-CET)",
     medium: "English Medium",
     subjects: ["Physics", "Chemistry", "Maths", "Biology", "English", "MHT-CET Preparation"],
     eligibility: "Students entering Std. 11th & 12th Science stream",
-    timing: "Demo lectures from 1st June 2026",
+    timing: "Regular batches with weekly tests",
     highlights: ["PCMB with English", "MHT-CET preparation", "With CET / Without CET options", "Concept + practice rigour"],
   },
   {
@@ -97,9 +97,9 @@ export const courses: Course[] = [
     title: "Commerce (11th & 12th)",
     level: "Std. 11th & 12th — Commerce",
     medium: "English Medium",
-    subjects: ["Accountancy", "Economics", "Book-Keeping", "Maths (optional)", "Secretarial Practice", "English"],
+    subjects: ["Economics", "Book-Keeping", "Maths (optional)", "Secretarial Practice", "English"],
     eligibility: "Students entering Std. 11th & 12th Commerce stream",
-    timing: "Demo lectures from 1st June 2026",
+    timing: "Regular batches with weekly tests",
     highlights: ["With SP / With Maths options", "Combo discount for 11th + 12th", "Free printed notes", "Exam-oriented teaching"],
   },
 ];
@@ -120,10 +120,10 @@ export const feeTables: FeeTable[] = [
   {
     title: "Semi-English Medium (2026-27)",
     rows: [
-      { label: "7th Std.", amount: "₹10,000/-" },
-      { label: "8th Std.", amount: "₹12,000/-" },
-      { label: "9th Std.", amount: "₹16,000/-" },
-      { label: "10th Std.", amount: "₹22,000/-" },
+      { label: "7th Std.", amount: "₹8,000/-" },
+      { label: "8th Std.", amount: "₹10,000/-" },
+      { label: "9th Std.", amount: "₹14,000/-" },
+      { label: "10th Std.", amount: "₹20,000/-" },
     ],
   },
   {
@@ -155,7 +155,7 @@ export const feeTables: FeeTable[] = [
 ];
 
 export const feeNote =
-  "Free printed notes available for one-time fees paid. Demo lectures for 11th (Commerce & Science) start Monday, 1st June 2026.";
+  "Free printed notes available for one-time fees paid.";
 
 /* ------------------------------------------------------------------ */
 /*  FACILITIES — from the brief + PDF (free notes, scholarships etc.)  */
@@ -179,10 +179,9 @@ export const facilities: Facility[] = [
 /*  FACULTY / SECTIONS — Director from PDF; section heads on page 12   */
 /* ------------------------------------------------------------------ */
 export const faculty: Faculty[] = [
-  { name: "Mahendra Chaudhari Sir", role: "Director & Founder", qualification: "B.Sc. B.Ed.", subject: "Mentor — School & Science", experience: "Since 2008", image: "/images/director.jpg" },
-  { name: "School Section", role: "Section Head", qualification: "Experienced State Board faculty", subject: "Std. 7th to 10th — All Subjects", experience: "Dedicated school team" },
-  { name: "Science Section", role: "Section Head", qualification: "PCMB & MHT-CET specialists", subject: "Std. 11th & 12th Science", experience: "CET-focused mentors" },
-  { name: "Commerce Section", role: "Section Head", qualification: "Commerce subject experts", subject: "Std. 11th & 12th Commerce", experience: "Board-focused mentors" },
+  { name: "Mahendra Chaudhari Sir", role: "Director & School Section Head", qualification: "B.Sc. B.Ed.", subject: "Std. 7th to 10th — All Subjects", experience: "Since 2008", image: "/images/director.jpg" },
+  { name: "Mukund Kokate Sir", role: "Science Section Head — 11th & 12th", qualification: "B.Sc. B.Ed.", subject: "Std. 11th & 12th Science (MHT-CET)", experience: "PCMB & MHT-CET mentor", image: "/images/faculty/mukund-kokate-sir.jpg" },
+  { name: "Nitin Bharati Sir", role: "Commerce Section Head", qualification: "M.Com. B.Ed.", subject: "Std. 11th & 12th Commerce", experience: "Board-focused mentor", image: "/images/faculty/nitin-bharati-sir.jpg" },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -244,7 +243,6 @@ export const faqs: FaqItem[] = [
   { question: "Which classes and standards do you coach?", answer: "Vidyadhan Classes coaches Std. 7th to 10th (English & Semi-English Medium) and Std. 11th & 12th in Science (MHT-CET) and Commerce." },
   { question: "Where is Vidyadhan Classes located?", answer: "A/3, Ramdas Apartment CHS Ltd, Vitawa, Post-Kalwa, Thane - 400605 (near TMC Tax Office / Amber Galaxy)." },
   { question: "How do I take admission?", answer: "Admissions are open. Call or WhatsApp Mahendra Chaudhari Sir on 9322094000, or fill the admission enquiry form on the Admissions page." },
-  { question: "When do the 11th demo lectures start?", answer: "Demo lectures for 11th (Commerce & Science) start on Monday, 1st June 2026." },
   { question: "Are study notes provided?", answer: "Yes. Free printed notes are available for students who pay one-time fees." },
   { question: "Do you prepare students for MHT-CET?", answer: "Yes. The Science programme includes MHT-CET preparation, with both 'With CET' and 'Without CET' fee options." },
   { question: "Is there a discount for taking 11th and 12th together?", answer: "Yes. There is a special discount on the 11th & 12th combo packages for both Commerce and Science." },

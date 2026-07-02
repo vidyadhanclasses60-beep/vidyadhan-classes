@@ -1,21 +1,19 @@
-VIDYADHAN CLASSES — update 4 (ALL 25 SSC toppers now have real photos)
-=====================================================================
-This is COMPLETE and self-contained (includes all 25 SSC face photos).
-Copy into your cloned GitHub folder, keep folder names, then Commit -> Push.
+VIDYADHAN CLASSES — update 7 (adds YouTube + Facebook)
+======================================================
+COMPLETE and self-contained — includes updates 5 & 6 too. If you haven't
+pushed those yet, this single package covers everything. Copy into your
+cloned GitHub folder, keep folder names, then Commit -> Push.
 
-  1) components/shared/TopperCard.tsx   -> overwrite existing
-  2) public/images/toppers/             -> copy ALL 25 .jpg here
-     (if an old "harprit-singh.jpg" is there, you can delete it — the file is
-      now named "harpritsingh-rathod.jpg" to match the correct name.)
+  10 code files (overwrite existing)
+  public/images/faculty/  -> 2 .jpg (mukund-kokate-sir.jpg, nitin-bharati-sir.jpg)
 
-RESULT: Every one of your 25 SSC topper cards (home + Results page) now shows
-the student's real face.
+NEW IN THIS UPDATE:
+  YouTube  -> https://www.youtube.com/@vidyadhanclassesthane
+  Facebook -> https://www.facebook.com/share/1DTevSScJT/?mibextid=wwXIfr
+  Both now appear as icons in the footer AND as rows on the Contact page,
+  alongside Instagram and Google Reviews.
 
-FIXED THIS ROUND: the site's data spells him "Harpritsingh Rathod" (his poster
-matches), so his photo now attaches correctly.
-
-STILL SHOWING INITIALS:
-  - HSC: all 17 toppers  -> send their individual posters and I'll add them.
-  - Star Performer "Manashree Pawar" (96.20%) on the Results page has no photo
-    slot yet (it's a designed highlight card). Send her poster if you want her
-    face featured there too.
+ALSO INCLUDED (from updates 5 & 6):
+  Header overlap fix · "7th to 10th" · MHT-CET · no Accountancy ·
+  demo lectures removed · Semi-English fees · Google Maps pin + directions ·
+  faculty photos for Kokate Sir & Bharati Sir.

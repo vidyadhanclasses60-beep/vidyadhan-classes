@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MapPin, Phone, Mail, MessageCircle, Clock, Instagram, Star } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, Clock, Instagram, Star, Youtube, Facebook } from "lucide-react";
 import { site } from "@/constants/site";
 import { PageHero } from "@/components/shared/PageHero";
 import { Reveal } from "@/components/shared/Reveal";
@@ -19,6 +19,8 @@ const details = [
   { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
   { icon: Mail, label: "Director's Email", value: site.directorEmail, href: `mailto:${site.directorEmail}` },
   { icon: Instagram, label: "Instagram", value: "@vidyadhanclasses_thane", href: site.social.instagram },
+  { icon: Youtube, label: "YouTube", value: "@vidyadhanclassesthane", href: site.social.youtube },
+  { icon: Facebook, label: "Facebook", value: "Vidyadhan Classes on Facebook", href: site.social.facebook },
   { icon: Star, label: "Google Reviews", value: "Rate us on Google", href: site.social.googleReview },
   { icon: Clock, label: "Office Hours", value: "Mon – Sat, 9:00 AM – 8:00 PM" },
 ];
@@ -86,6 +88,11 @@ export default function ContactPage() {
             <p className="mt-4 text-center text-sm text-ink/60">
               {site.address.full} — {site.address.landmark}
             </p>
+            <div className="mt-4 flex justify-center">
+              <Button href={site.mapsUrl} variant="primary" size="md">
+                <MapPin className="h-4 w-4" /> Get Directions on Google Maps
+              </Button>
+            </div>
           </Reveal>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone, Mail, MessageCircle, Instagram, Star } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, Instagram, Star, Youtube, Facebook } from "lucide-react";
 import { nav, site } from "@/constants/site";
 import { courses } from "@/lib/data";
 import { Logo } from "@/components/shared/Logo";
@@ -12,12 +12,18 @@ export function Footer() {
         <div>
           <Logo light />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-brand-100/85">
-            For Quality Education since {site.established}. Coaching for Std. 7th–10th and 11th & 12th
+            For Quality Education since {site.established}. Coaching for Std. 7th to 10th and 11th & 12th
             (Science & Commerce) in Vitawa, Kalwa, Thane.
           </p>
           <div className="mt-5 flex gap-3">
             <a href={site.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="rounded-full bg-white/10 p-2.5 transition hover:bg-gold-500 hover:text-brand-900">
               <Instagram className="h-4 w-4" />
+            </a>
+            <a href={site.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="rounded-full bg-white/10 p-2.5 transition hover:bg-gold-500 hover:text-brand-900">
+              <Facebook className="h-4 w-4" />
+            </a>
+            <a href={site.social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="rounded-full bg-white/10 p-2.5 transition hover:bg-gold-500 hover:text-brand-900">
+              <Youtube className="h-4 w-4" />
             </a>
             <a href={site.social.googleReview} target="_blank" rel="noopener noreferrer" aria-label="Review us on Google" className="rounded-full bg-white/10 p-2.5 transition hover:bg-gold-500 hover:text-brand-900">
               <Star className="h-4 w-4" />

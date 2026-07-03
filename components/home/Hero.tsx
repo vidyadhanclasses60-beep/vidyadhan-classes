@@ -87,6 +87,14 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="relative mx-auto w-full max-w-md"
         >
+          <Image
+            src="/images/badge-no1.png"
+            alt="No.1 Coaching Classes since 2008"
+            width={520}
+            height={673}
+            className="absolute -top-6 -right-2 z-10 h-28 w-auto drop-shadow-xl sm:-right-5 sm:h-32"
+            priority
+          />
           <div className="rounded-4xl bg-white/10 p-6 ring-1 ring-white/15 backdrop-blur">
             <div className="flex justify-center">
               <Image

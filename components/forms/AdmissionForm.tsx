@@ -3,7 +3,12 @@
 import { useState } from "react";
 import { Send, MessageCircle } from "lucide-react";
 import { site } from "@/constants/site";
-import { courses } from "@/lib/data";
+const courseOptions = [
+  "English Medium (7th to 10th)",
+  "Semi-English Medium (7th to 10th)",
+  "Science (11th & 12th) — MHT-CET",
+  "Commerce (11th & 12th)",
+];
 
 const standards = [
   "7th", "8th", "9th", "10th",
@@ -17,7 +22,7 @@ export function AdmissionForm() {
     parentName: "",
     phone: "",
     standard: standards[0],
-    course: courses[0].title,
+    course: courseOptions[0],
     message: "",
   });
   const [touched, setTouched] = useState(false);
@@ -90,7 +95,7 @@ export function AdmissionForm() {
         <div>
           <label className="mb-1.5 block text-sm font-semibold text-brand-900">Course Interested In</label>
           <select className={inputClass} value={form.course} onChange={update("course")}>
-            {courses.map((c) => <option key={c.slug}>{c.title}</option>)}
+            {courseOptions.map((c) => <option key={c}>{c}</option>)}
           </select>
         </div>
 

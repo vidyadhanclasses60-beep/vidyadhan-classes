@@ -63,6 +63,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-body)", "ui-sans-serif", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "ui-sans-serif", "system-ui", "sans-serif"],
+        script: ['"Kaushan Script"', "cursive"],
       },
       borderRadius: {
         "4xl": "2rem",

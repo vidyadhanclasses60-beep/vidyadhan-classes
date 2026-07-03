@@ -21,6 +21,9 @@ const galleryImages: Record<string, { src: string; w: number; h: number }> = {
   "10th Std. Farewell Ceremony 2025-26": { src: "/images/gallery/farewell-ceremony-2026.jpg", w: 1200, h: 900 },
   "Student Gathering & Sessions": { src: "/images/gallery/student-gathering.jpg", w: 1200, h: 900 },
   "Annual Function Highlights": { src: "/images/gallery/annual-function.jpg", w: 1200, h: 900 },
+  "Classroom & Doubt Sessions": { src: "/images/gallery/classroom-doubt-session.jpg", w: 1200, h: 900 },
+  "100% Result Celebration": { src: "/images/gallery/result-celebration.jpg", w: 1200, h: 800 },
+  "Teacher's Day Sohla 2025": { src: "/images/gallery/teachers-day-sohla.jpg", w: 1200, h: 800 },
 };
 
 export function GalleryGrid() {

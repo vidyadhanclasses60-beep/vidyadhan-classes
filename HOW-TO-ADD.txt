@@ -1,20 +1,11 @@
-VIDYADHAN CLASSES — FINAL package (self-contained)
-==================================================
-This ONE package contains every change. Copy into your cloned GitHub folder
-(keep folder names, overwrite), then GitHub Desktop: Commit -> Push.
-  - all code folders (app, components, constants, lib, tailwind.config.ts)
-  - public/images/  -> overwrite the whole folder
+VIDYADHAN CLASSES — mobile Contact page fix
+===========================================
+Copy this one file into your cloned GitHub folder (overwrite), then
+GitHub Desktop: Commit -> Push.
 
-WHAT'S IN THIS FINAL VERSION
-  • Topper cards: PHOTOS REMOVED — every SSC & HSC card now shows the clean
-    initials avatar (the look from your 2nd photo). Consistent across all.
-      (The photo files are still in public/images/toppers/ but unused, so photos
-       can be switched back on later in one step if you ever want them.)
-  • Mobile: added a safety rule so there is never sideways/horizontal scroll
-    on phones. (The site was already responsive; this hardens it.)
-  • Everything else from earlier updates:
-      Gallery all 12 cards have photos · header fix · "7th to 10th" · Science
-      MHT-CET · no Accountancy · demo lectures removed · Semi-English fees ·
-      Google Maps pin + directions · YouTube + Facebook · faculty photos
-      (Kokate, Bharati) · No.1 badge on home · script tagline font · dropdown
-      split (English / Semi-English medium).
+  app/contact/page.tsx   -> overwrite existing
+
+WHAT IT FIXES
+  On mobile, the long email address couldn't wrap and pushed the Contact
+  page wider than the screen (looked broken / zoomed out). Now the text
+  wraps inside its card and the page fits the phone width properly.

@@ -45,14 +45,14 @@ export default function ContactPage() {
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-50 text-brand-700">
                     <d.icon className="h-6 w-6" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs font-bold uppercase tracking-wide text-ink/50">{d.label}</p>
                     {d.href ? (
-                      <a href={d.href} target={d.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="font-semibold text-brand-900 hover:text-crimson-600">{d.value}</a>
+                      <a href={d.href} target={d.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="font-semibold text-brand-900 break-words hover:text-crimson-600">{d.value}</a>
                     ) : (
-                      <p className="font-semibold text-brand-900">{d.value}</p>
+                      <p className="font-semibold text-brand-900 break-words">{d.value}</p>
                     )}
-                    {d.sub && <p className="mt-0.5 text-xs text-ink/60">{d.sub}</p>}
+                    {d.sub && <p className="mt-0.5 text-xs text-ink/60 break-words">{d.sub}</p>}
                   </div>
                 </div>
               ))}

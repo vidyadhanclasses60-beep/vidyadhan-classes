@@ -1,13 +1,20 @@
-VIDYADHAN CLASSES — update 9 (SELF-CONTAINED — use this, skip update 8)
-======================================================================
-Same as update 8, but the 25 topper photos are cropped EVEN TIGHTER so the
-poster frame and "congratulations" text are fully gone — just the face shows.
-
-Copy into your cloned GitHub folder (keep folder names), overwrite, then
-GitHub Desktop: Commit -> Push.
-
+VIDYADHAN CLASSES — FINAL package (self-contained)
+==================================================
+This ONE package contains every change. Copy into your cloned GitHub folder
+(keep folder names, overwrite), then GitHub Desktop: Commit -> Push.
   - all code folders (app, components, constants, lib, tailwind.config.ts)
-  - public/images/  -> overwrite the whole folder (IMPORTANT: replaces the old
-    topper photos with the clean tighter ones)
+  - public/images/  -> overwrite the whole folder
 
-This one package brings the whole site to the final state (updates 4 through 9).
+WHAT'S IN THIS FINAL VERSION
+  • Topper cards: PHOTOS REMOVED — every SSC & HSC card now shows the clean
+    initials avatar (the look from your 2nd photo). Consistent across all.
+      (The photo files are still in public/images/toppers/ but unused, so photos
+       can be switched back on later in one step if you ever want them.)
+  • Mobile: added a safety rule so there is never sideways/horizontal scroll
+    on phones. (The site was already responsive; this hardens it.)
+  • Everything else from earlier updates:
+      Gallery all 12 cards have photos · header fix · "7th to 10th" · Science
+      MHT-CET · no Accountancy · demo lectures removed · Semi-English fees ·
+      Google Maps pin + directions · YouTube + Facebook · faculty photos
+      (Kokate, Bharati) · No.1 badge on home · script tagline font · dropdown
+      split (English / Semi-English medium).

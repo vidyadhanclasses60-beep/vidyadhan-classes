@@ -7,31 +7,8 @@ import { initials, avatarGradient, cn } from "@/lib/utils";
 /* Keyed by the exact name in lib/data.ts. Names not listed here keep   */
 /* the branded initials avatar as a graceful fallback.                  */
 const topperPhotos: Record<string, string> = {
-  "Divya Sonawane": "/images/toppers/divya-sonawane.jpg",
-  "Nandini Wagh": "/images/toppers/nandini-wagh.jpg",
-  "Atharva Shinde": "/images/toppers/atharva-shinde.jpg",
-  "Shreya Kesare": "/images/toppers/shreya-kesare.jpg",
-  "Sujit Chikane": "/images/toppers/sujit-chikane.jpg",
-  "Shravani Chaudhari": "/images/toppers/shravani-chaudhari.jpg",
-  "Parth Lohar": "/images/toppers/parth-lohar.jpg",
-  "Om Kheratkar": "/images/toppers/om-kheratkar.jpg",
-  "Tanvi Tambe": "/images/toppers/tanvi-tambe.jpg",
-  "Bhavesh Lotankar": "/images/toppers/bhavesh-lotankar.jpg",
-  "Nidhi Padwal": "/images/toppers/nidhi-padwal.jpg",
-  "Aryan Shinde": "/images/toppers/aryan-shinde.jpg",
-  "Sumedh Jagzap": "/images/toppers/sumedh-jagzap.jpg",
-  "Vedika Unde": "/images/toppers/vedika-unde.jpg",
-  "Vedanti Shinde": "/images/toppers/vedanti-shinde.jpg",
-  "Mausam Medatiya": "/images/toppers/mausam-medatiya.jpg",
-  "Omkar Ranpise": "/images/toppers/omkar-ranpise.jpg",
-  "Sakshi Yadav": "/images/toppers/sakshi-yadav.jpg",
-  "Rahul Choudhary": "/images/toppers/rahul-choudhary.jpg",
-  "Navin Lohar": "/images/toppers/navin-lohar.jpg",
-  "Sarthak Rode": "/images/toppers/sarthak-rode.jpg",
-  "Manthan Jadhav": "/images/toppers/manthan-jadhav.jpg",
-  "Harpritsingh Rathod": "/images/toppers/harpritsingh-rathod.jpg",
-  "Jay Karanje": "/images/toppers/jay-karanje.jpg",
-  "Aditya Patil": "/images/toppers/aditya-patil.jpg",
+  // Photos removed by request — every topper now shows the initials avatar.
+  // To bring photos back later, restore the "Name": "/images/toppers/slug.jpg" lines.
 };
 
 export function TopperCard({ topper, rank }: { topper: Topper; rank?: number }) {

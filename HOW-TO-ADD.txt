@@ -1,13 +1,19 @@
-VIDYADHAN CLASSES — extra mobile hardening (OPTIONAL)
-=====================================================
-FIRST: test vidyadhanclasses.com/contact in an INCOGNITO tab on your phone.
-If it already looks correct there, the earlier problem was just browser CACHE
-and you DO NOT need this zip.
+VIDYADHAN CLASSES — REAL Contact mobile fix (right side was cut off)
+===================================================================
+Copy into your cloned GitHub folder (overwrite), then Commit -> Push,
+wait 1-2 min, then HARD REFRESH (or Incognito) on your phone.
 
-If incognito STILL shows a problem, then push this:
-  app/globals.css            -> overwrite
-  app/contact/page.tsx       -> overwrite
-Then Commit -> Push, and send me a FRESH video (with the current time on it).
+  app/contact/page.tsx   -> overwrite
+  app/globals.css        -> overwrite
 
-What this adds: overflow-x: clip on <html> too, and the map limited to the
-screen width (max-w-full) — extra protection against any sideways scroll.
+WHAT WAS WRONG
+  On mobile the contact column was wider than the screen, so the right side
+  got cut off (address "...400605", the email, the WhatsApp button, the form
+  heading). The earlier fix wrapped text visually but didn't shrink its width,
+  so it still overflowed.
+
+WHAT THIS FIXES
+  - Forces the contact column to fit the phone width (grid-cols-1).
+  - Long email/address now truly wrap and shrink (overflow-wrap:anywhere),
+    so nothing gets cut off.
+  - Map limited to screen width; html+body guard against sideways scroll.

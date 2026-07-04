@@ -37,7 +37,7 @@ export default function ContactPage() {
       />
 
       <section className="py-20">
-        <div className="container grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="container grid grid-cols-1 gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
             <div className="space-y-4">
               {details.map((d) => (
@@ -48,11 +48,11 @@ export default function ContactPage() {
                   <div className="min-w-0">
                     <p className="text-xs font-bold uppercase tracking-wide text-ink/50">{d.label}</p>
                     {d.href ? (
-                      <a href={d.href} target={d.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="font-semibold text-brand-900 break-words hover:text-crimson-600">{d.value}</a>
+                      <a href={d.href} target={d.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="font-semibold text-brand-900 [overflow-wrap:anywhere] hover:text-crimson-600">{d.value}</a>
                     ) : (
-                      <p className="font-semibold text-brand-900 break-words">{d.value}</p>
+                      <p className="font-semibold text-brand-900 [overflow-wrap:anywhere]">{d.value}</p>
                     )}
-                    {d.sub && <p className="mt-0.5 text-xs text-ink/60 break-words">{d.sub}</p>}
+                    {d.sub && <p className="mt-0.5 text-xs text-ink/60 [overflow-wrap:anywhere]">{d.sub}</p>}
                   </div>
                 </div>
               ))}

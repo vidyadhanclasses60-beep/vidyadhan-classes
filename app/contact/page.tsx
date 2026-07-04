@@ -77,6 +77,7 @@ export default function ContactPage() {
               <iframe
                 title="Vidyadhan Classes location"
                 src={mapSrc}
+                className="block w-full max-w-full"
                 width="100%"
                 height="420"
                 style={{ border: 0 }}

@@ -1,11 +1,13 @@
-VIDYADHAN CLASSES — mobile Contact page fix
-===========================================
-Copy this one file into your cloned GitHub folder (overwrite), then
-GitHub Desktop: Commit -> Push.
+VIDYADHAN CLASSES — extra mobile hardening (OPTIONAL)
+=====================================================
+FIRST: test vidyadhanclasses.com/contact in an INCOGNITO tab on your phone.
+If it already looks correct there, the earlier problem was just browser CACHE
+and you DO NOT need this zip.
 
-  app/contact/page.tsx   -> overwrite existing
+If incognito STILL shows a problem, then push this:
+  app/globals.css            -> overwrite
+  app/contact/page.tsx       -> overwrite
+Then Commit -> Push, and send me a FRESH video (with the current time on it).
 
-WHAT IT FIXES
-  On mobile, the long email address couldn't wrap and pushed the Contact
-  page wider than the screen (looked broken / zoomed out). Now the text
-  wraps inside its card and the page fits the phone width properly.
+What this adds: overflow-x: clip on <html> too, and the map limited to the
+screen width (max-w-full) — extra protection against any sideways scroll.
